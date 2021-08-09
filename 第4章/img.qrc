@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="png">
+    <file>Kasumigaoka1.jpg</file>
+    <file>k1.png</file>
+  </qresource>
+</RCC>
