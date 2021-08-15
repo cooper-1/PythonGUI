@@ -56,13 +56,18 @@ class Ui_Test(object):
         self.label.setText(_translate("Test", "账号："))
         self.label_2.setText(_translate("Test", "密码："))
         self.pushButton.setText(_translate("Test", "退出"))
+
+
 import img_rc
 import sys
+
+
 def show_MainWindow():
     app = QtWidgets.QApplication(sys.argv)  # 实例化QApplication类，作为GUI主程序入口
     MainWindow = QtWidgets.QMainWindow()  # 创建MainWindow
     ui = Ui_Test()  # 实例化ui类
     ui.setupUi(MainWindow)  # 设置窗口UI
+    MainWindow.setWindowFlags(QtCore.Qt.Dialog)
     MainWindow.show()  # 显示窗口
     sys.exit(app.exec_())  # 当窗口创建完成时，需要结束主循环过程
 
